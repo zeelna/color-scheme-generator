@@ -5,4 +5,103 @@
 html, body {
     margin: 0;
     padding: 0;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
+
+/* Typography */
+
+/* navigation bar */
+.container {
+    width: 550px;
+    margin: 0 auto;
+    display: block;
+    background-color: whitesmoke;
+}
+
+.shadow {
+    box-shadow: 0 5px 0 0 #222222;
+}
+
+.nav-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    background-color: aquamarine;
+    padding: 23px 15px 25px 14px;
+    max-height: 90px;
+}
+
+input, select, button {
+    margin: 10px 0;
+}
+
+input {
+    width: 61px;
+    height: 42px;
+    border: 1px solid #313131;
+    outline: 1px solid #D1D5DB;
+}
+select {
+    min-width: 312px;
+}
+
+select, button {
+    height: 42px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    color: #374151;
+    background-color: #FFFFFF;
+    padding: 0 13px;
+}
+
+button {
+    font-size: 0.675rem;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+/* content */
+.color-list {
+    /*
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    */
+    display: inline-block;
+    gap: 0;
+}
+
+.item-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: start;
+    justify-content: start;
+    width: 110px;
+}
+
+.color-panel {
+    height: 410px;
+    min-height: 75vh;
+    width: 100%;
+    text-align: center;
+    background-color: azure;
+}
+
+.color-hex {
+    background-color: lightblue;
+
+    height: 46px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
