@@ -5,8 +5,41 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <title>Color Scheme Generator</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="index.js"></script>
+    <main>
+        <nav id="navigation" class="container shadow">
+            <div class="nav-options">
+                <input
+                    required
+                    type="color"
+                    id="color-id"
+                    name="seed"
+                    aria-label="Choose a seed color:"
+                >
+                <select required id="scheme-id" name="scheme" aria-label="Choose a color scheme mode">
+                    <!-- Index.js assigns mode per API call -->
+                    <option>Monochrome</option>
+                    <option>RGB</option>
+                </select>
+                <button id="btn-get-color" class="btn-get-color">Get color scheme</button>
+            </div>
+        </nav>
+        <section id="main-section" class="container">
+            <div id="color-list" class="color-list">
+                <!-- Index.js assigns colors per API call-->
+                <div class="item-div">
+                    <div class="color-panel">p</div>
+                    <div class="color-hex">hex</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Reference Javascript -->
+    <script src="index.js" type="module"></script>
 </body>
 </html>
