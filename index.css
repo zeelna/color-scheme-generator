@@ -1,8 +1,8 @@
-*, *:before, *:after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-html, body {
+main, body {
     margin: 0;
     padding: 0;
 
@@ -12,7 +12,6 @@ html, body {
     font-style: normal;
 }
 
-/* Typography */
 
 /* navigation bar */
 .container {
@@ -22,17 +21,13 @@ html, body {
     background-color: whitesmoke;
 }
 
-.shadow {
-    box-shadow: 0 5px 0 0 #222222;
-}
-
 .nav-options {
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     gap: 1em;
-    background-color: aquamarine;
+    background-color: lavenderblush;
     padding: 23px 15px 25px 14px;
     max-height: 90px;
 }
@@ -44,9 +39,11 @@ input, select, button {
 input {
     width: 61px;
     height: 42px;
-    border: 1px solid #313131;
+    border: none;
+    border-radius: 4px;
     outline: 1px solid #D1D5DB;
 }
+
 select {
     min-width: 312px;
 }
@@ -54,9 +51,9 @@ select {
 select, button {
     height: 42px;
     border: 1px solid #D1D5DB;
-    border-radius: 4px;
+    border-radius: 8px;
     color: #374151;
-    background-color: #FFFFFF;
+    background-color: transparent;
     padding: 0 13px;
 }
 
@@ -66,15 +63,13 @@ button {
     font-weight: 500;
 }
 
-/* content */
-.color-list {
-    /*
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    */
-    display: inline-block;
-    gap: 0;
+button:focus, button:hover,
+select:focus, button:hover,
+input:focus, button:hover {
+    cursor: pointer;
+    border-color: black;
 }
+
 
 .item-div {
     display: flex;
@@ -82,22 +77,21 @@ button {
     gap: 0;
     align-items: start;
     justify-content: start;
-    width: 110px;
+}
+
+.color-hex, .color-panel {
+    width: 100%;
 }
 
 .color-panel {
-    height: 410px;
-    min-height: 75vh;
-    width: 100%;
+    min-height: 400px;
     text-align: center;
-    background-color: azure;
+    background-color: lavender;
 }
 
 .color-hex {
-    background-color: lightblue;
-
     height: 46px;
-    width: 100%;
+    background-color: lavenderblush;
     display: flex;
     justify-content: center;
     text-align: center;
