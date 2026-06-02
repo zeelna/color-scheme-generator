@@ -13,30 +13,29 @@
 <body>
     <main>
         <nav id="navigation" class="container shadow">
-            <div class="nav-options">
+            <form id="form" class="nav-options">
                 <input
                     required
                     type="color"
+                    value="#E63E62"
                     id="color-id"
                     name="seed"
                     aria-label="Choose a seed color:"
                 >
                 <select required id="scheme-id" name="scheme" aria-label="Choose a color scheme mode">
-                    <!-- Index.js assigns mode per API call -->
-                    <option>Monochrome</option>
-                    <option>RGB</option>
+                    <option value="monochrome" selected>Monochrome</option>
+                    <option value="monochrome-light">Monochrome-Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
                 </select>
                 <button id="btn-get-color" class="btn-get-color">Get color scheme</button>
-            </div>
+            </form>
         </nav>
-        <section id="main-section" class="container">
-            <div id="color-list" class="color-list">
-                <!-- Index.js assigns colors per API call-->
-                <div class="item-div">
-                    <div class="color-panel">p</div>
-                    <div class="color-hex">hex</div>
-                </div>
-            </div>
+        <section id="section-colors" class="container">
+            <!-- Index.js assigns colors per API call-->
         </section>
     </main>
     <!-- Reference Javascript -->
