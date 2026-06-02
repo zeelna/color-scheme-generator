@@ -63,7 +63,7 @@ function renderHTML(data) {
 
     const colorSection = document.getElementById('section-colors')
     colorSection.innerHTML =
-        `<div id="color-list" className="color-list" style="display:grid; grid-template-columns: repeat(${data.colors.length}, 1fr);">
+        `<div id="color-list" class="color-list" style="display:grid; grid-template-columns: repeat(${data.colors.length}, 1fr);">
             ${colorsHTML}
         </div>`
     /* return */

@@ -12,7 +12,6 @@ main, body {
     font-style: normal;
 }
 
-
 /* navigation bar */
 .container {
     width: 550px;
@@ -70,7 +69,7 @@ input:focus, button:hover {
     border-color: black;
 }
 
-
+/* Content */
 .item-div {
     display: flex;
     flex-direction: column;
@@ -97,5 +96,4 @@ input:focus, button:hover {
     text-align: center;
     align-items: center;
 }
-
-
+/* */
